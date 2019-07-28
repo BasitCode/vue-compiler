@@ -72,6 +72,9 @@
     right: 0px;
     left: 0px;
     bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px 0px 12px;
 }
 
 .window .titlebar .btn {
@@ -91,18 +94,6 @@
     line-height: 24px;
     text-align: center;
     -webkit-app-region:drag;
-}
-
-#root {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    padding: 12px 12px 0px 12px;
-
 }
 
 body {

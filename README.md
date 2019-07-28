@@ -9,5 +9,6 @@ Easily compile your vue file components to javascript modules
 * Compile to next modes: AMD, UMD, Global And CommonJS
 
 ## Available platforms
-currently only on windows
+currently only on Windows
+
 Linux and Mac in fututre

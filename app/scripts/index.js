@@ -6,8 +6,8 @@ let {
     app,
     dialog
 } = remote
-
-let Vue = require('../scripts/vue.dev')
+let isDev = require('electron-is-dev')
+let Vue = require(isDev ? '../scripts/vue.dev' : '../scripts/vue.js')
 let vtj = require('vue-to-js')
 let path = require('path')
 
@@ -78,6 +78,11 @@ let vueApp = new Vue({
 
             }
             return status
+        }
+    },
+    computed: {
+        windowTitle : function () {
+            return `${app.getName()} (${app.getVersion()})`  
         }
     }
 })

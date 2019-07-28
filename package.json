@@ -1,9 +1,11 @@
 {
   "name": "vue-compiler",
+  "productName": "Vue Compiler",
   "version": "1.0.0",
   "description": "'compile vue files'",
   "main": "main.js",
   "dependencies": {
+    "electron-is-dev": "^1.1.0",
     "path": "^0.12.7",
     "vue-devtools": "^5.1.0",
     "vue-to-js": "^0.9.4"
