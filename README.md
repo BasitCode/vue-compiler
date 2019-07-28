@@ -1,2 +1,4 @@
 # vue-compiler
- Compile .vue files
+ Compile .vue files to js
+
+![screenshot screenshot](./screenshot.jpg)
