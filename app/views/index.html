@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>vue compiler</title>
+</head>
+
+<body>
+    <div class="window">
+        <div class="titlebar">
+            <div class="text"> vue compiler </div>
+            <div class="btn"> <i class="mi">close</i></div>
+        </div>
+        <div class="content">
+            <div id="root">
+                <div class="panel">
+                    <input type="button" class="mi" value="note_add" @click="LoadFiles()">
+                    <select v-model="mode">
+                        <option value="umd">UMD</option>
+                        <option value="amd">AMD</option>
+                        <option value="global">Global</option>
+                        <option value="commonjs">CommonJS</option>
+                    </select>
+                    <input type="button" value="Compile" @click="Compile()">
+                    <label>Total: {{ files.length }}</label>
+                    <input type="button" class="btn-remove mi" value="clear_all" @click="RemoveFiles()">
+                </div>
+
+                <div class="list" :style="{
+                    backgroundImage: (files.length > 0 ? 'none' : '')
+                }">
+                    <div v-for="(file, i) in files" :class="'item' + FileStatus(i)">
+                        <label @click="ShowFile(file.path)">{{ file.path }}</label>
+                        <input type="button" class="btn-remove mi" value="remove" @click="RemoveFile()" style="width: 50px;">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../scripts/index.js"></script>
+
+</html>

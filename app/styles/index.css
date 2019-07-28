@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('../fonts/Roboto-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'roboto-black';
+    src: url('../fonts/Roboto-Black.ttf')
+}
+
+@font-face {
+    font-family: 'mi';
+    src: url('../fonts/mi.ttf')
+}
+
+.mi {
+    font-family: 'mi' !important;
+    font-size: 24px;
+    color: #525280;
+    font-style: normal;
+    font-weight: normal !important;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+* {
+    font-family: 'roboto-regular';
+    font-size: 12px;
+    color: #59599e;
+    outline: none;
+    user-select: none;
+    transition: all 0.15s;
+}
+
+*::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+*::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.window {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+
+    background-image: url('../images/window_bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.window .titlebar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 30px;
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-end;
+}
+.window .content {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.window .titlebar .btn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.window .titlebar .btn:hover * {
+    color: white;
+}
+.window .titlebar .text {
+    width: 100%;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    -webkit-app-region:drag;
+}
+
+#root {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px 0px 12px;
+
+}
+
+body {
+    background-color: #1d1d2d;
+}
+
+.panel {
+    background-color: #292940;
+    border-radius: 12px;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+    margin-bottom: 12px;
+    /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); */
+}
+.panel label {
+    width: 50%;
+    font-family: 'roboto-black';
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.panel-top {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    left: 12px;
+    height: 100px;
+    overflow: hidden;
+}
+
+input, select {
+    height: 30px;
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 0px 12px;
+}
+
+input[type="button"], select {
+    cursor: pointer;
+    width: 150px;
+    color: #41B883;
+    font-family: 'roboto-black'
+}
+select {
+    text-align: center;
+    width: 100%;
+}
+select option {
+    color: gray;
+    background-color: #212121;
+    font-family: 'roboto-black';
+}
+select option:checked {
+    color: #41B883;
+    background-color: #34495E;
+}
+
+input[type="button"]:hover, select:hover {
+    background-color: #41B883;
+    color: #34495E;
+}
+
+.list {
+    height: 100%;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 0px 1px #292940;
+    padding: 12px 12px 0px 12px;
+    overflow: auto;
+
+    background-image: url('../images/droparea_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list .item {
+    border-radius: 6px;
+    background-color: #292940;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.list .item label {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 30px;
+    padding: 0px 12px;
+    cursor: pointer;
+}
+
+.list .item label:hover {
+    color: white !important;
+}
+
+.positive {
+    background-color: #133525 !important;
+    color: #41B883;
+    box-shadow: 0px 0px 0px 1px #41B883;
+}
+.positive label {
+    color: #41B883;
+}
+
+.negative {
+    background-color: #350b13 !important;
+    color: crimson;
+    box-shadow: 0px 0px 0px 1px crimson;
+}
+.negative label {
+    color: crimson;
+}
+
+.btn-remove {
+    color: crimson !important;
+}
+.btn-remove:hover {
+    background-color: crimson !important;
+    color: #350b13 !important;
+}
+
+
