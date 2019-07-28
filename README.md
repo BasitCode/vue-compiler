@@ -1,12 +1,12 @@
 # vue-compiler
- Compile .vue files to js
+Easily compile your vue file components to javascript modules
 
 ![screenshot](./others/screenshot1.jpg)
 
-##Features
+## Features
 * Multiple file selection
 * Drag And Drop
-* Compile to next modes: 'AMD', 'UMD', 'Global' And 'CommonJS'
+* Compile to next modes: AMD, UMD, Global And CommonJS
 
 ## Platform
 currently only on windows
