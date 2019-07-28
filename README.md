@@ -1,4 +1,4 @@
-# vue-compiler
+# Vue Compiler
 Easily compile your vue file components to javascript modules
 
 ![screenshot](./others/screenshot1.jpg)
@@ -8,5 +8,6 @@ Easily compile your vue file components to javascript modules
 * Drag And Drop
 * Compile to next modes: AMD, UMD, Global And CommonJS
 
-## Platform
+## Available platforms
 currently only on windows
+Linux and Mac in fututre
