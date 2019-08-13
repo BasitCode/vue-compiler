@@ -9,9 +9,10 @@
     <div class="window" id="root">
         <div class="titlebar">
             <div class="text"> {{ windowTitle }} </div>
-            <div class="btn"> <i class="mi">close</i></div>
+            <div class="btn"> <i class="mi" @click="CloseApp()">close</i></div>
         </div>
         <div class="content">
+
             <div class="panel">
                 <input type="button" class="mi" value="note_add" @click="LoadFiles()">
                 <select v-model="mode">
@@ -28,6 +29,7 @@
             <div class="list" :style="{
                     backgroundImage: (files.length > 0 ? 'none' : '')
                 }">
+
                 <div v-for="(file, i) in files" :class="'item' + FileStatus(i)">
                     <label @click="ShowFile(file.path)">{{ file.path }}</label>
                     <input type="button" class="btn-remove mi" value="remove" @click="RemoveFile()"
@@ -35,9 +37,8 @@
                 </div>
             </div>
 
-
-
         </div>
+        <vue-message></vue-message>
     </div>
 </body>
 <script src="../scripts/index.js"></script>

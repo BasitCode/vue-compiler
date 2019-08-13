@@ -6,7 +6,7 @@ function createWindow () {
   win = new BrowserWindow({ width: 800, height: 600, frame:false })
 
   win.loadFile('app/views/index.html')
-  win.webContents.openDevTools()
+  //win.webContents.openDevTools()
   win.on('closed', () => {
     win = null
   })
@@ -19,7 +19,7 @@ function createWindow () {
 app.on('ready', () => {
   if (process.env.NODE_ENV !== 'production') {
     createWindow()
-    require('vue-devtools').install()
+    //require('vue-devtools').install()
   }
 })
 

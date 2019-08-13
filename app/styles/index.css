@@ -31,7 +31,6 @@
     color: #59599e;
     outline: none;
     user-select: none;
-    transition: all 0.15s;
 }
 
 *::-webkit-scrollbar{
@@ -195,6 +194,26 @@ input[type="button"]:hover, select:hover {
 
 .list .item label:hover {
     color: white !important;
+}
+
+.positive {
+    background-color: #133525 !important;
+    color: #41B883;
+    box-shadow: 0px 0px 0px 1px #41B883;
+}
+.positive label {
+    color: #41B883;
+}
+
+
+.compiling {
+    background-color: #343513 !important;
+    color: #acb841;
+    box-shadow: 0px 0px 0px 1px #acb841;
+}
+.compiling label {
+    color: #acb841;
+    transition: none;
 }
 
 .positive {
