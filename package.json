@@ -13,9 +13,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-win": "electron-packager --electron-version=2.0.18 --overwrite --asar=true --platform=win32 --icon=./app/images/icon.ico ./build",
-    "build-linux": "electron-packager --electron-version=2.0.18 --overwrite --asar=true --platform=linux --icon=./app/images/icon.png ./build",
-    "build-darwin": "electron-packager --electron-version=2.0.18 --overwrite --asar=true --platform=darwin --icon=./app/images/icon.png ./build"
+    "build-win": "electron-packager . --electron-version=2.0.18 --overwrite --asar=true --platform=win32 --icon=./app/images/icon.ico --ignore=^/builds --out=builds",
+    "build-linux": "electron-packager . --electron-version=2.0.18 --overwrite --asar=true --platform=linux --icon=./app/images/icon.png --ignore=^/builds --out=builds",
+    "build-darwin": "electron-packager . --electron-version=2.0.18 --overwrite --asar=true --platform=darwin --icon=./app/images/icon.icns --ignore=^/builds --out=builds"
   },
   "keywords": [
     "vue",
